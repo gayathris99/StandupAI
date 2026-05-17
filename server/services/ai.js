@@ -1,4 +1,4 @@
-const OpenAI = requires('openai')
+const OpenAI = require('openai')
 
 const client = new OpenAI({
     baseURL: 'https://openrouter.ai/api/v1',
