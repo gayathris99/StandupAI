@@ -1,4 +1,4 @@
-const BASE_URL = 'https://standupai-server.onrender.com'
+const BASE_URL = 'https://standupai-server.onrender.com/api'
 
 export async function loginUser(email, password) {
   const response = await fetch(`${BASE_URL}/auth/login`, {

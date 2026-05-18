@@ -8,7 +8,7 @@ export default function LeadDashboard() {
   useEffect(() => {
     fetchStandups()
   }, [])
-const BASE_URL = 'https://standupai-server.onrender.com'
+const BASE_URL = 'https://standupai-server.onrender.com/api'
   async function fetchStandups() {
     try {
       const token = localStorage.getItem('token')
