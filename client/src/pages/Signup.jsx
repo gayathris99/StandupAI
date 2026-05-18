@@ -11,7 +11,7 @@ export default function Signup() {
   const [error, setError] = useState('')
   const navigate = useNavigate()
 
-  const BASE_URL = 'https://standupai-server.onrender.com'
+  const BASE_URL = 'https://standupai-server.onrender.com/api'
 
   function handleChange(e) {
     setForm({ ...form, [e.target.name]: e.target.value })
@@ -22,7 +22,7 @@ export default function Signup() {
     setError('')
 
     try {
-      const response = await fetch(`${BASE_URL}/api/auth/signup`, {
+      const response = await fetch(`${BASE_URL}/auth/signup`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(form)

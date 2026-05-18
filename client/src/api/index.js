@@ -39,7 +39,7 @@ export async function submitStandup(rawText) {
 
 export async function fetchMyStandups() {
     const token = localStorage.getItem('token')
-    const response = await fetch(`${BASE_URL}/api/standups/my`, {
+    const response = await fetch(`${BASE_URL}/standups/my`, {
       headers: {
         'Authorization': `Bearer ${token}`
       }

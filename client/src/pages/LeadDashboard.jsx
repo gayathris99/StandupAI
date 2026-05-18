@@ -12,7 +12,7 @@ const BASE_URL = 'https://standupai-server.onrender.com/api'
   async function fetchStandups() {
     try {
       const token = localStorage.getItem('token')
-      const response = await fetch(`${BASE_URL}/api/standups/all`, {
+      const response = await fetch(`${BASE_URL}/standups/all`, {
         headers: {
           'Authorization': `Bearer ${token}`
         }
