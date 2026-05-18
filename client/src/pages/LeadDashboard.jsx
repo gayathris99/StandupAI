@@ -8,11 +8,11 @@ export default function LeadDashboard() {
   useEffect(() => {
     fetchStandups()
   }, [])
-
+const BASE_URL = 'https://standupai-server.onrender.com'
   async function fetchStandups() {
     try {
       const token = localStorage.getItem('token')
-      const response = await fetch('http://127.0.0.1:8000/api/standups/all', {
+      const response = await fetch(`${BASE_URL}/api/standups/all`, {
         headers: {
           'Authorization': `Bearer ${token}`
         }
