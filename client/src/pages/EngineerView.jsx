@@ -41,7 +41,7 @@ export default function EngineerView() {
 
   return (
     <div className="max-w-2xl mx-auto p-8">
-      <h1 className="text-2xl font-bold mb-2">Good morning, {name}!</h1>
+      <h1 className="text-2xl font-bold mb-2">Hello, {name}!</h1>
       <p className="text-gray-500 mb-6">What did you work on today?</p>
 
       <textarea
